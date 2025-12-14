@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Repository Mirror</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Repository Mirror</h1>
+    <p class="subtitle">GitGrade Hackathon Project</p>
+
+    <input
+      type="text"
+      id="repoUrl"
+      placeholder="Enter GitHub Repository URL"
+    />
+
+    <button onclick="analyzeRepo()">Analyze Repository</button>
+
+    <div id="result" class="result" style="display: none;">
+      <h2>Analysis Result</h2>
+
+      <div class="score-box">
+        <span id="score">0 / 100</span>
+      </div>
+
+      <h3>Summary</h3>
+      <p id="summary"></p>
+
+      <h3>Detected Tech Stack</h3>
+      <p id="techStack"></p>
+
+      <h3>Personalized Roadmap</h3>
+      <ul id="roadmap"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
